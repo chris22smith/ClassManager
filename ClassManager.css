@@ -1,0 +1,201 @@
+html {
+    font-size: 16px;
+    height:100%;
+}
+
+body {
+    background-color: #eee;
+    color: #000;
+    font-family: 'Roboto', sans-serif;
+    font-size: 100%;
+    height:100%;
+    margin: 0;
+    padding: 0;
+}
+
+header {
+    background:#c00;
+}
+
+    header h1 {
+        color:#fff;
+        font-family:'Rock Salt', cursive;
+        margin:0 1em;
+    }
+
+#sort-by {
+    border:none;
+    border-radius:.5em;
+    font-family: inherit;
+    padding:.5em;
+    position:absolute;
+    right:1em;
+    top:1em;
+}
+
+    #sort-by option {
+        padding:.5em;
+    }
+
+.sort-options {
+    background-color: #222;
+    color: #ccc;
+    padding: .5em;
+}
+
+.layout-options {
+    background-color:#444;
+    color:#eee;
+    padding:.5em;
+}
+
+    .sort-options a,
+    .layout-options a{
+        color: #09f;
+        padding: .5em;
+        text-decoration: none;
+        -webkit-transition: .5s;
+        transition: .5s;
+        white-space: nowrap;
+    }
+
+        .sort-options a:hover,
+        .layout-options a:hover {
+            color: #fff;
+        }
+
+.list {
+    list-style: none;
+    margin: .5em;
+    padding: .5em;
+    position: relative;
+}
+
+    .list li {
+        background-color: #fff;
+        border-bottom: solid 1px #ccc;
+        border-radius:2px;
+        box-shadow: 0 0 2px rgba(0,0,0,0.12), 0 2px 4px rgba(0,0,0,0.24);
+        box-sizing: border-box;
+        display: block;
+/*        font-family:'Rock Salt', cursive;*/
+        font-weight: bold;
+        left: 0;
+        margin: .5em;
+        padding: 1em;
+        position: absolute;
+        top: 0;
+        -webkit-transition: -webkit-transform 2s cubic-bezier(.25,0,.75,1); /* Safari needs values between 0 and 1 */
+        transition: transform 2s cubic-bezier(.25,-0.75,.75,1.25);
+        width: 10em;
+    }
+
+        .list li:hover {
+            cursor: pointer;
+        }
+
+        .list li.selected {
+            outline:solid 5px;
+        }
+
+        .list li.faded {
+            opacity:.2;
+        }
+
+        .list li span {
+            display:block;
+/*            font-family: sans-serif;*/
+            font-size:.75em;
+            color:#999;
+        }
+
+.male {
+    color:#09f;
+}
+
+.female {
+    color:#f09;
+}
+
+/*
+.boys-list,
+.girls.list {
+    float: left;
+}
+*/
+
+
+
+/*
+.male:before {
+    border: solid 1em transparent;
+    border-right: solid 1em #09f;
+    border-top: solid 1em #09f;
+    content: "";
+    height: 0;
+    position: absolute;
+    right: 0;
+    top: 0;
+    width: 0;
+}
+*/
+
+/*
+.female:before {
+    border: solid 1em transparent;
+    border-right: solid 1em #f09;
+    border-top: solid 1em #f09;
+    content: "";
+    height: 0;
+    position: absolute;
+    right: 0;
+    top: 0;
+    width: 0;
+}
+*/
+
+.birthday {
+    /* if date of birth matches today */
+}
+
+.add-child-form {
+    float: right;
+    padding: .5em;
+}
+
+form {
+    background-color: #fff;
+    border-bottom: solid 1px #ccc;
+    box-shadow: 0 0 2px rgba(0,0,0,0.12), 0 2px 4px rgba(0,0,0,0.24);
+    display: inline-block;
+    margin: .5em;
+    padding: 1em;
+}
+
+input[type=text],
+input[type=date] {
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    border: solid 1px #ccc;
+    box-shadow: 0 2px 2px 0 rgba(0,0,0,0.12) inset;
+    font-size: inherit;
+}
+
+button {
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    background-color: #09f;
+    border: none;
+    border-bottom: solid 1px #06c;
+    box-shadow: 0 0 2px rgba(0,0,0,0.12), 0 2px 4px rgba(0,0,0,0.24);
+    color: #fff;
+    font-size: inherit;
+    padding: .5em 1em;
+    -webkit-transition: .5s;
+    transition: .5s;
+}
+
+    button:hover {
+        background-color: #0cf;
+        border-bottom: solid 1px #09f;
+    }

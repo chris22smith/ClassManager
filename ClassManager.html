@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+
+<html>
+<head>
+    <meta charset="utf-8" />
+    <title>Class Manager</title>
+<!--    <link href="http://fonts.googleapis.com/css?family=Roboto" rel="stylesheet" type="text/css">-->
+    <link href='http://fonts.googleapis.com/css?family=Rock+Salt' rel='stylesheet' type='text/css'>
+    <link href="ClassManager.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+    <header>
+        <h1>Class Manager</h1>
+        <select id="sort-by">
+            <option>Sort By</option>
+            <option value="sort-by-name-asc">Name A-Z</option>
+            <option value="sort-by-name-desc">Name Z-A</option>
+            <option value="sort-by-age-desc">Age (old-young)</option>
+            <option value="sort-by-age-asc">Age (young-old)</option>
+            <option value="sort-by-gender">Gender</option>
+            <option value="random">Random</option>
+        </select>
+        <button type="button" id="pick-one">Pick 1</button>
+        <button type="button" id="reset">Reset</button>
+        <h2 id="date-today"></h2>
+    </header>
+    <!--<div class="sort-options">
+        Sort By
+        <a href="#sort-by-name-asc">Name A-Z</a>
+        <a href="#sort-by-name-desc">Name Z-A</a>
+        <a href="#sort-by-age-desc">Age (oldest first)</a>
+        <a href="#sort-by-age-asc">Age (youngest first)</a>
+        <a href="#sort-by-gender">Gender</a>
+    </div>-->
+    <div class="layout-options">
+        Layout
+        <a href="#compact">Compact</a>
+        <a href="#spaced">Spaced</a>
+    </div>
+    <div class="add-child-form">
+        <form name="addChild">
+            <h3>Add New Child to Class</h3>
+            <p>
+                <label>
+                    Name <input type="text" name="name" />
+                </label>
+            </p>
+            <p>
+                <label>
+                    Male <input type="radio" name="gender" value="M" />
+                </label>
+                <label>
+                    Female <input type="radio" name="gender" value="F" />
+                </label>
+            </p>
+            <p>
+                <label>
+                    Date of Birth <input type="date" name="dob" placeholder="DD/MM/YYYY" />
+                </label>
+            </p>
+            <p>
+                <label>
+                    Tags <input type="text" name="tags" placeholder="e.g. year" />
+                </label>
+            </p>
+            <p>
+                <button type="submit">Add</button>
+                <button type="reset">Clear</button>
+            </p>
+        </form>
+    </div>
+    <ul class="list class-list"></ul>
+    <!--<ul class="list boys-list"></ul>
+    <ul class="list girls-list"></ul>-->
+    <script src="demoClass.js"></script>
+    <script src="ClassManager.js"></script>
+</body>
+</html>
